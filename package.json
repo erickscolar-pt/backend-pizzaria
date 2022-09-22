@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only src/server.ts",
-    "build": "rimraf ./build && tsc",
-    "start": "next start -p $PORT"
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "dev": "next",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
