@@ -6,10 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
     "build": "rimraf ./build && tsc",
-    "start": "node src/server.js",
-    "prepare": "prisma generate",
-    "generate": "npx prisma generate",
-    "deploy": "npx prisma migrate deploy"
+    "start": "node src/server.js"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
